@@ -123,16 +123,16 @@ public class Server extends ReceiverAdapter implements Serializable {
 //    }
 
 
-    public static void main(String args[]) {
-        try {
-            Server server = new Server();
-            server.start();
-            while (true) {
-                Util.sleep(10000);
-            }
-        } catch (Throwable t) {
-            t.printStackTrace();
-        }
-    }
+//    public static void main(String args[]) {
+//        try {
+//            Server server = new Server();
+//            server.start();
+//            while (true) {
+//                Util.sleep(10000);
+//            }
+//        } catch (Throwable t) {
+//            t.printStackTrace();
+//        }
+//    }
 
 }
