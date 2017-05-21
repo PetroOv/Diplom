@@ -77,11 +77,6 @@ public class Server extends ReceiverAdapter implements Serializable {
             System.out.println("Server" + channel.address() + "is full");
             hasFreeSpace = false;
         }
-        FileOutputStream fos = new FileOutputStream("temp.txt");
-        ObjectOutputStream oos = new ObjectOutputStream(fos);
-        oos.writeObject(this);
-        oos.flush();
-        oos.close();
     }
     public Address searchKey(String key){
         if(records.containsKey(key))
